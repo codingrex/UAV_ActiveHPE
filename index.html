@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="A new camera for event-based vision">
+  <meta property="og:title" content="Active Human Pose"/>
+  <meta property="og:description" content="A new camera for event-based vision"/>
+  <meta property="og:url" content="https://github.com/Bottle101/ActiveHPE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/og.jpg" />
+  <meta property="og:image:width" content="1080"/>
+  <meta property="og:image:height" content="1080"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ActiveHPE</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <h1 class="title is-1 publication-title"><img src="static/images/omnilogo.ico" alt="ox Image" width="60" height="60"/> OmniNxt</h1> -->
+            <h1 class="title is-2 publication-title">Active Human Pose Estimation via an Autonomous UAV Agent</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+              <a href="https://codingrex.github.io/" target="_blank">Jingxi Chen</a>, 
+              <span class="author-block">
+              <a href="https://bottle101.github.io/" target="_blank">Botao He</a>,</span>
+              <span class="author-block">
+              <a href="https://chahatdeep.github.io/" target="_blank">Chahat Deep Singh</a>,</span>
+              <span class="author-block">
+              <a href="https://users.umiacs.umd.edu/~fer/" target="_blank">Cornelia Fermüller</a>,
+              <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=7QmEsOwAAAAJ&hl=en" target="_blank">Yiannis Aloimonos</a>,</span>
+              <span class="author-block">
+            </div>
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- sr PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (IROS 2024)</span>
+                      </a>
+                    </span>
+                        <!-- Arxiv PDF link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2407.01811" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Pre-print</span>
+                    </a>
+                  </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-video"></i>
+                      </span>
+                      <span>Video (YouTube)</span>
+                    </a>
+                  </span>
+
+                  <!-- <span class="link-block">
+                    <a href="https://www.bilibili.com/video/BV1qU411d7p2/?spm_id_from=333.337.search-card.all.click" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-video"></i>
+                    </span>
+                    <span>Video (Bilibili)</span>
+                  </a>
+                </span> -->
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block"> -->
+                    <!-- <a href="https://zenodo.org/records/10542425" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span> -->
+                    <!-- <span>Open Source</span> -->
+                  <!-- </a>  -->
+                <!-- </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2403.20085.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+                </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop"></div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1"> Overview</h2>
+        </h2>
+    </div>
+  </div>
+
+</section>
+
+  <div class="container is-max-desktop">
+
+    <!-- Visual Effects. -->
+    <div class="column">
+      <div class="content">
+
+        <p>
+
+          Our proposed pipeline consists of two main components: On-Drone Perception and Perception Aware Planning.
+          </a>
+
+      </p>
+
+      <img src="static/images/Banner.png" alt="sys" width="1920" height="1080"/>
+      
+        
+
+      
+      </div>
+    </div>
+ 
+    </div>
+
+
+
+
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <h2 class="title is-2" style="text-align: center;" id="method-video" >On-Drone Perception</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/eA4cL7flNTY" title="On-Drone Perception"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <h2 class="title is-2" style="text-align: center;" id="oral-video" >Perception Aware Planning</h2>
+        <div class="publication-video">
+          <iframe src="static/videos/planning.mp4" title="Agile But Safe : Learning Collision-Free High-Speed Legged Locomotion" 
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/robustness.png" alt="sys" width="1920" height="1080"/>
+      <h2 class="subtitle has-text-centered">
+        
+When both the drone and the observed human are moving, the human's scale in the drone's view is influenced by their distance and the human's size. Additionally, translation and rotation variances occur naturally due to the drone's inherent instability while flying. 
+To make our learning-based perception system robust and efficient, we normalize the observed poses.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<div style="text-align: center;">
+  <img src="static/images/pesdf.png" alt="sys" width="960" height="550"/>
+  <h2 class="subtitle has-text-centered">
+    We introduce our proposed perception-aware motion planning framework to bridge the gap between perception and motion planning. In the proposed framework, the perception loss is added to the motion planning cost function as one of the costs. 
+  </h2>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            One of the core activities of an active observer involves moving to secure a "better" view of the scene, where the definition of "better" is task-dependent. This paper focuses on the task of human pose estimation from videos capturing a person's activity. Self-occlusions within the scene can complicate or even prevent accurate human pose estimation. To address this, relocating the camera to a new vantage point is necessary to clarify the view, thereby improving 2D human pose estimation. This paper formalizes the process of achieving an improved viewpoint. Our proposed solution to this challenge comprises three main components: a NeRF-based Drone-View Data Generation Framework, an On-Drone Network for Camera View Error Estimation, and a Combined Planner for devising a feasible motion plan to reposition the camera based on the predicted errors for camera views. The Data Generation Framework utilizes NeRF-based methods to generate a comprehensive dataset of human poses and activities, enhancing the drone's adaptability in various scenarios. The Camera View Error Estimation Network is designed to evaluate the current human pose and identify the most promising next viewing angles for the drone, ensuring a reliable and precise pose estimation from those angles. Finally, the combined planner incorporates these angles while considering the drone's physical and environmental limitations, employing efficient algorithms to navigate safe and effective flight paths. This system represents a significant advancement in active 2D human pose estimation for an autonomous UAV agent, offering substantial potential for applications in aerial cinematography by improving the performance of autonomous human pose estimation and maintaining the operational safety and efficiency of UAVs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Software & Algorithm</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        
+       <div class="item">
+        <img src="static/images/FC-Planner_01.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/FC-Planner_02.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/FC-Planner_03.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/FC-Planner_04.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/FC-Planner_05.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">Experimental Results</h2>
+<div style="text-align: center;">
+  <h2 class="subtitle has-text-centered">
+    <video poster="" id="tree" controls width="1280" height="640">
+      <source src="static/videos/exp.mp4"
+      type="video/mp4">
+    </video>
+  </h2>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Data-quality Improvement on Different Event Representations</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop  width="960" >
+            <source src="static/videos/S2_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop  width="960" >
+            <source src="static/videos/S2_2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop  width="960" >\
+            <source src="static/videos/S2_3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<section class="hero is-small">
+  <!-- <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">Data-quality Improvement on Different Event Representations</h2>
+<div style="text-align: center;">
+  <img src="static/images/texture.png" alt="sys" width="960" height="640"/>
+  <h2 class="subtitle">
+    Our AMI-EV can acquire more environmental information than traditional event cameras.
+    It can maintain a high-informational output while preserving the advantages of event cameras, such as HDR and high temporal resolution. 
+  </h2>
+</div>
+</div>
+</div>
+</section>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+
+        <div class="content has-text-justified">
+          <video poster="" id="tree" autoplay controls muted loop width="960">
+            <source src="static/videos/S2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">Low-level Vision Task: Feature Detection and Tracking</h2>
+<div style="text-align: center;">
+  <img src="static/images/feature.png" alt="sys" width="960" height="640"/>
+  <h2 class="subtitle has-text-centered">
+    In <b>structured environment (i)</b>, both the Grayscale camera and AMI-EV outperform the event camera.
+    In <b>unstructured environment (ii)</b>, Grayscale camera is the best, while AMI-EV can also achieve robust performance.
+    In <b>challenging illumination conditions (iii)</b>, only AMI-EV can work robustly. Grayscale camera suffer from its low dynamic range, while the event camera cannot maintain stable texture.
+  </h2>
+</div>
+</div>
+</div>
+</section>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+
+        <div class="content has-text-justified">
+          <video poster="" id="tree" autoplay controls muted loop width="960">
+            <source src="static/videos/S3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+    
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">High-level Vision Task: Human Detection and Pose Estimation</h2>
+<div style="text-align: center;">
+  <img src="static/images/S4.png" alt="sys" width="960" height="640"/>
+
+</div>
+</div>
+</div>
+</section>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+
+        <div class="content has-text-justified">
+          <video poster="" id="tree" autoplay controls muted loop width="960">
+            <source src="static/videos/S4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+  
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">Open-sourced Simulator</h2>
+<h2 class="subtitle">
+  Don't want to build a hardware device? No worries! We provide a simulator to help you understand the system and test your algorithms. 
+</h2>
+<div style="text-align: center;">
+  <img src="static/images/simulator.png" alt="sys" width="960"/>
+  <h2 class="subtitle">
+    Data generated by the simulator. <b>(A)</b> (left) 3D rendered scene with multiple moving objects (right) golf scene.
+    <b>(B)</b> Output of the released translator. 
+    (left) image from the Neuromorphic-Caltech 101 dataset and two event count images generated from an S-EV and an AMI-EV, respectively; 
+    (right) scene from Multi Vehicle Stereo Event Camera Dataset
+  </h2>
+</div>
+</div>
+</div>
+</section> -->
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Real-world Experiments</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/VINS-Depth.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/Pointclouod.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/omni-plan .mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+<h2 class="title is-3">Extensions of OmniNxt</h2>
+<div style="text-align: center;">
+  <img src="static/images/omni_platforms.png" alt="sys"/>
+</div>
+<div class="item item-video3">
+  <video poster="" id="video3" autoplay controls muted loop height="100%">\
+    <source src="static/videos/extensions.mp4"
+    type="video/mp4">
+  </video>
+</div>
+</div>
+</div>
+</section> -->
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IOuJ7Y6dpeY?si=E4vkQZLxacZ0bTFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{chen2024active,
+        title={Active Human Pose Estimation via an Autonomous UAV Agent},
+        author={Chen, Jingxi and He, Botao and Singh, Chahat Deep and Fermuller, Cornelia and Aloimonos, Yiannis},
+        journal={arXiv preprint arXiv:2407.01811},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
